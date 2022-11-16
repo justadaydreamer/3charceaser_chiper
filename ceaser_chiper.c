@@ -3,19 +3,21 @@
 
 int main(void){
     char x,y,z,n; 
-    int a;
+    int a,k;
     scanf("%c", &x);
     scanf("%c", &y);
-    scanf("%c",&z);
+    scanf("%c", &z);
+    printf("Key to change :\n");
+    scanf("%d", &k);
     printf("Select to Decode or Encode\n");
     printf("If Encode press 1 of Decode press 2 :\n");
     scanf("%d", &a);
    
     
     if (a == 1){
-    x = x+3;
-    y = y+3;
-    z = z+3;
+    x = x+k;
+    y = y+k;
+    z = z+k;
     
     printf("Select to encode in word of interger");
     scanf(" %c", &n);
@@ -35,9 +37,9 @@ int main(void){
     }
 
     if (a == 2){
-    x = x-3;
-    y = y-3;
-    z = z-3;
+    x = x-k;
+    y = y-k;
+    z = z-k;
     
     printf("Select to encode in word of interger");
     scanf(" %c", &n); 
